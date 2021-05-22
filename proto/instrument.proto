@@ -1,0 +1,37 @@
+syntax = "proto3";
+
+package instrument;
+
+message InstrumentString {
+  int32 string_number = 1;
+  double scale_length = 2;
+  string note = 3;
+  int32 octave = 4;
+  int32 offset = 5;
+  double gauge = 6;
+  string brand = 7;
+  double tension = 8;
+  double breaking_point = 9;
+  double stress = 10;
+  double frequency = 11;
+  double unit_weight = 12;
+  int32  tensile = 13;
+}
+
+message InstrumentTemplate {
+  string instrument_type = 1;
+  int32 string_count = 2;
+  string tuning_type = 3;
+  int32 tuning_offset = 4;
+  repeated double string_set = 5;
+}
+
+message InstrumentModifiers {
+  double min_scale_length = 1;
+  double max_scale_length = 2;
+  double min_tension = 3;
+  double max_tension = 4;
+  string brand = 5;
+  string wound_third_threshold = 6;
+  int32 tensile = 7;
+}
