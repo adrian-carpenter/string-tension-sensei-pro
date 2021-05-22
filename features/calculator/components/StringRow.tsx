@@ -70,7 +70,7 @@ export const StringRow: React.FC<StringRowElement> = ({ instrumentString }) => {
       >
         <span>{instrumentString.breakingPoint.toFixed(2)}</span>
         &nbsp;
-        <span>{`(${instrumentString.stress.toFixed(2)}%)`}</span>
+        <span>{`(${(instrumentString.stress * 100).toFixed(2)}%)`}</span>
       </Grid>
       <Grid className={classes.rowItem} item xs={1}>
         {instrumentString.frequency}
