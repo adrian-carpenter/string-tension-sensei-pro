@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme: Theme) =>
       padding: theme.spacing(2, 4, 3),
       maxWidth: '90%',
       maxHeight: '75%',
-      overflow: 'auto'
+      overflow: 'auto',
     },
     boxSection: {
       marginBottom: '16px',
@@ -194,7 +194,8 @@ export const AboutModal = () => {
                   manually create the desired tuning rather than creating a
                   bunch of conditional logic. Furthermore, since there's no way
                   to determine intention of placement, i.e. CGCGCG or CGCGCE or
-                  CGCEGC or CEGCGE, the resulting template would lack the desired behavior. tl;dr - Just create it manually
+                  CGCEGC or CEGCGE, the resulting template would lack the
+                  desired behavior. tl;dr - Just create it manually
                 </span>
               </Box>
               <Box

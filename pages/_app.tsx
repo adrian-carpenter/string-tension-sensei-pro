@@ -7,6 +7,7 @@ import {
   CssBaseline,
   Container,
 } from '@material-ui/core';
+import Head from 'next/head';
 
 function MyApp({ Component, pageProps }) {
   const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
@@ -29,6 +30,12 @@ function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
+      <Head>
+        <meta
+          name="string-tension-sensei-pro"
+          content="String Tension Sensei Pro"
+        />
+      </Head>
       <Container maxWidth="xl">
         <Component {...pageProps} />
       </Container>
