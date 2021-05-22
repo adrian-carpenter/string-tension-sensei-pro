@@ -80,10 +80,7 @@ const calculatorModel: CalculatorModel = {
       (s) => s.stringNumber !== instrumentString.stringNumber,
     );
     newSet.push(instrumentString);
-    calculatorStore.strings = modifyStringSet(
-      modifiers,
-      newSet.sort((a, b) => (a.stringNumber < b.stringNumber ? -1 : 1)),
-    );
+    calculatorStore.strings = newSet.sort((a, b) => (a.stringNumber < b.stringNumber ? -1 : 1))
   },
   generateTemplate: (template) => {
     const { modifiers } = calculatorStore;
